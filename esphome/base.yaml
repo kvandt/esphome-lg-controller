@@ -20,10 +20,10 @@ esp32:
 uart:
   - id: ac_serial
     # For the FeatherS3, use GPIO18
-    tx_pin: GPIO25
+    tx_pin: GPIO1
     rx_pin:
       # For the FeatherS3, use GPIO17
-      number: GPIO26 # Keep in sync with rx_pin below.
+      number: GPIO3 # Keep in sync with rx_pin below.
       allow_other_uses: true
     baud_rate: 104
 
@@ -51,7 +51,7 @@ climate:
     uart_id: ac_serial
     rx_pin:
       # For the FeatherS3, use GPIO17
-      number: GPIO26 # Keep in sync with rx_pin above.
+      number: GPIO3 # Keep in sync with rx_pin above.
       allow_other_uses: true
     fahrenheit: ${fahrenheit}
     is_slave_controller: ${is_slave_controller}
